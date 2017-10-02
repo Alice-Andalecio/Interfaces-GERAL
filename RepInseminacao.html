@@ -38,10 +38,12 @@
 
          <nav id="main-nav-wrap">
             <ul class="main-navigation">
-               <li><a href="questao.html" title="">Início</a></li>
-               <li><a href="questao.html" title="">Questões</a></li>
-               <li><a href="editarQuestao.html" title="">Editar Questões</a></li>   
-               <li><a href="perfil.html" title="">Perfil</a></li>
+               <li><a href="CadastroAnimal.html" title="">Cadastro de Animais</a></li>
+               <li><a href="VisualizarExcluirAnimal.html" title="">Visualização/Exclusao de Animais</a></li>   
+               <li><a href="perfil.html" title="">Controle Leiteiro</a></li>
+               <li><a href="perfil.html" title="">Dieta</a></li>
+               <li><a href="perfil.html" title="">Medicamentos</a></li>
+               <li><a href="perfil.html" title="">Venda de Leite</a></li>
                <li class="highlight with-sep"><a href="index.html" title="">Sair</a></li>                             
             </ul>
          </nav>
@@ -49,7 +51,7 @@
       </div>        
    </header>
 
-   <!-- Formulário para visualização e exclusão de animais -->
+   <!-- Formulário: Controle Reprodutivo - Inseminação/Cobrição -->
    <section id="process">  
       <br>
 
@@ -91,9 +93,14 @@
                   </select>
                </div>
                <div class="col s1"></div>
-               <div class="input-field col s4">
+               <div class="input-field col s2">
                   <input type="text" id="animal"></input>
                   <label for="animal"><b>Animal</b></label>
+               </div>
+               <div class="col s1"></div>
+               <div class="input-field col s1">
+                  <input type="text" id="numAnimal"></input>
+                  <label for="numAnimal"><b>Nº</b></label>
                </div>
             </div>
 
@@ -154,22 +161,25 @@
 
             <div class="row">
                <hr>
+               <br>
+               <i class="material-icons">edit</i>
+               <b>Preencha os campos referentes à inseminação/cobrição da vaca:</b>
+               <br><br>
             </div>
 
-            <b>Preencha os campos referentes à inseminação/cobrição da vaca:</b>
-            <br><br><br>
+            <div class="row">
+               <div class=" input-field col s2">
+                  <p>Data da Inseminação:</p>
+                  <input type="date" id="dataInseminacao" name="dataInseminacao">
+               </div>
+               <div class="col s1"></div>
+               <div class=" input-field col s2">
+               <p>Hora da Inseminação:</p>
+                  <input type="time" id="horaInseminacao" name="horaInseminacao">
+               </div>
+            </div>
 
             <div class="row">
-               <div class="input-field col s1">
-                  <input type="text" id="numAnimal"></input>
-                  <label for="numAnimal"><b>Número</b></label>
-               </div>
-               <div class="col s1"></div>
-               <div class="input-field col s2">
-                  <input type="text" id="nomAnimal"></input>
-                  <label for="nomAnimal"><b>Nome</b></label>
-               </div>
-               <div class="col s1"></div>
                <div class="input-field col s2">
                   <input type="text" id="reprodutor"></input>
                   <label for="reprodutor"><b>Reprodutor</b></label>
@@ -177,45 +187,106 @@
                <div class="col s1"></div>
                <div class="input-field col s2">
                   <input type="text" id="raca"></input>
-                  <label for="raca"><b>Raça (Reprodutor)</b></label>
+                  <label for="raca"><b>Raça</b></label>
                </div>
                <div class="col s1"></div>
-               <div class="input-field col s1">
-                  <input type="text" id="grupo"></input>
-                  <label for="grupo"><b>Grupo</b></label>
-               </div>
-            </div>
-
-            <div class="row">
                <div class="input-field col s2">
                   <input type="text" id="inseminador"></input>
                   <label for="inseminador"><b>Inseminador</b></label>
                </div>
                <div class="col s1"></div>
+               <div class="input-field col s1">
+                  <input type="number" id="numDoses"></input>
+                  <label for="numDoses"><b>Nº Doses</b></label>
+               </div>
+               <div class="col s1"></div>
+               <div class="col s1">
+                  <select id="te" name="te" class="browser-default">
+                     <option value="" disabled selected>TE</option>
+                     <option value="1">Sim</option>
+                     <option value="2">Não</option>
+                  </select>
+               </div>
+            </div>
+
+            <div class="row">
+               <hr>
+               <br>
+               <i class="material-icons">edit</i>
+               <b>Preencha os campos referentes ao cio da vaca:</b>
+               <br><br>
+            </div>
+
+            <div class="row">
+               <div class=" input-field col s2">
+                  <p>Data do cio:</p>
+                  <input type="date" id="dataInseminacao" name="dataInseminacao">
+               </div>
+               <div class="col s1"></div>
+               <div class=" input-field col s2">
+               <p>Hora do cio:</p>
+                  <input type="time" id="horaInseminacao" name="horaInseminacao">
+               </div>
+            </div>
+
+            <div class="row">
+               <br>
+               <div class="col s2">
+                  <select id="cio" name="cio" class="browser-default">
+                     <option value="" disabled selected>Cio</option>
+                     <option value="1">Sim</option>
+                     <option value="2">Não</option>
+                  </select>
+               </div>
+               <div class="col s1"></div>
+               <div class="col s2">
+                  <select id="muco" name="muco" class="browser-default">
+                     <option value="" disabled selected>Muco</option>
+                     <option value="1">Sim</option>
+                     <option value="2">Não</option>
+                  </select>
+               </div>
+               <div class="col s1"></div>
                <div class="input-field col s2">
-                  <input type="text" id="numDoses"></input>
-                  <label for="numDoses"><b>Nº de Doses</b></label>
+                  <input type="text" id="cond"></input>
+                  <label for="cond"><b>Condição</b></label>
                </div>
                <div class="col s1"></div>
                <div class="input-field col s1">
-                  <input type="text" id="TE"></input>
-                  <label for="TE"><b>TE</b></label>
+                  <input type="text" id="ecc"></input>
+                  <label for="ecc"><b>ECC</b></label>
                </div>
                <div class="col s1"></div>
                <div class="input-field col s1">
-                  <input type="text" id="cio"></input>
-                  <label for="cio"><b>Cio</b></label>
+                  <input type="text" id="proIATF"></input>
+                  <label for="proIATF"><b>Prot. IATF</b></label>
                </div>
-               <div class="col s1"></div>
-               <div class="input-field col s1">
-                  <input type="text" id="muco"></input>
-                  <label for="muco"><b>Muco</b></label>
+            </div>
+
+            <div class="row">
+               <hr>
+               <br>
+               <i class="material-icons">edit</i>
+               <b>Observações:</b>
+               <br><br>
+            </div>
+
+            <div class="row">
+               <div class="col s12">
+                  <textarea id="obs"></textarea>
+               </div>
+            </div>
+
+            <div class="row">
+               <br>
+               <div class="col s3">
+                  <a class="waves-effect waves-light btn" id="salvarReg">
+                  <i class="material-icons right">done</i>Salvar</a>
                </div>
             </div>
 
          </form>
       </div>
-
    </section>   
 
    <!-- Footer -->
