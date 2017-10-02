@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
    <meta charset="utf-8">
-   <title>Medicamento</title>
+   <title>Diagnóstico</title>
    <meta name="description" content="">  
    <meta name="author" content="">
 
@@ -38,14 +38,19 @@
 
          <nav id="main-nav-wrap">
             <ul class="main-navigation">
-               <li><a href="index.html" title="">Início</a></li>
-               <li><a href="cadastro.html" title="">Cadastre-se</a></li>
+               <li><a href="CadastroAnimal.html" title="">Cadastro de Animais</a></li>
+               <li><a href="VisualizarExcluirAnimal.html" title="">Visualização/Exclusao de Animais</a></li>   
+               <li><a href="perfil.html" title="">Controle Leiteiro</a></li>
+               <li><a href="perfil.html" title="">Dieta</a></li>
+               <li><a href="perfil.html" title="">Medicamentos</a></li>
+               <li><a href="perfil.html" title="">Venda de Leite</a></li>
                <li class="highlight with-sep"><a href="index.html" title="">Sair</a></li>                             
             </ul>
          </nav>
          <a class="menu-toggle" href="#"><span>Menu</span></a>   
       </div>        
    </header>
+
 
    <!-- Formulário para realizar login no sistema -->
    <section id="process">  
@@ -64,32 +69,40 @@
                </div>
             </div>
             <div class="row">
-               <div class="col s1"></div>
-               <div class="input-field col s10 center-block">
-                  <input id="senha" type="password" class="validate">
-                  <label for="senha"><b>Prescrição do Medicamento</b></label>
-               </div>
+             <div class="col s1"></div>
+             <div class="col s10">  
+               <i class="material-icons">edit</i>
+               <b>Prescrição:</b>
             </div>
-            <br>
-            <div class="row" id="adicionar_excluir-inserir">
-               <div class="col s1"></div>
-               <div class="col s6">
-                  <a class="btn-floating btn waves-effect waves-light" id="inserirAlternativa-inserir">
-                     <i class="material-icons">add</i>
-                  </a>
-                  <a class="btn-floating btn waves-effect waves-light" id="excluirAlternativa-inserir">
-                     <i class="material-icons">delete</i>
-                  </a>
-                  <a class="btn-floating btn waves-effect waves-light" id="limparAlternativa-inserir">
-                     <i class="material-icons">delete_forever</i>
-                  </a>
-               </div>
+         </div>
+
+         <div class="row">
+            <div class="col s1"></div>
+            <div class=" col s10">
+               <textarea id="pres" placeholder="Insira a prescrição e observações necessárias"></textarea>
             </div>
-            <div class="row">
-               <center>
+         </div>
+         <br>
+         <div class="row" id="adicionar_excluir-inserir">
+            <div class="col s1"></div>
+            <div class="col s6">
+               <a class="btn-floating btn waves-effect waves-light" id="inserirAlternativa-inserir">
+                  <i class="material-icons">add</i>
+               </a>
+               <a class="btn-floating btn waves-effect waves-light" id="excluirAlternativa-inserir">
+                  <i class="material-icons">delete</i>
+               </a>
+               <a class="btn-floating btn waves-effect waves-light" id="limparAlternativa-inserir">
+                  <i class="material-icons">delete_forever</i>
+               </a>
+            </div>
+         </div>
+         <div class="row">
+            <center>
                <div class="col s12">
-                  <a class="waves-effect waves-light btn">Gravar</a><br>
-               </div>
+                  <a class="waves-effect waves-light btn" id="salvarReg">
+                     <i class="material-icons right">done</i>Salvar</a>
+                  </div>
                </center>
             </div>
          </div>
