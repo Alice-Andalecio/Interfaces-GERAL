@@ -24,74 +24,65 @@
             background: #14171c;
          }
 
-         table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-         }
-         th, td {
-            padding: 5px;
-            text-align: left;
-         }
-         table#t01 {
-            width: 100%;    
-            background-color: #f1f1c1;
-         }
+         table, th {
+           border: 1px solid black;
+        }
+        
+     </style>
+  </head>
 
-      </style>
+  <body id="top">
 
-   </head>
+   <!-- Header -->
+   <header>
+      <div class="row">
+         <div class="logo">
+            <a href="index.html"></a>
+         </div>
 
-   <body id="top">
+         <nav id="main-nav-wrap">
+            <ul class="main-navigation">
+               <li><a href="CadastroAnimal.html" title="">Cadastro de Animais</a></li>
+               <li><a href="VisualizarExcluirAnimal.html" title="">Visualização/Exclusao de Animais</a></li>   
+               <li><a href="perfil.html" title="">Controle Leiteiro</a></li>
+               <li><a href="perfil.html" title="">Dieta</a></li>
+               <li><a href="perfil.html" title="">Medicamentos</a></li>
+               <li><a href="perfil.html" title="">Venda de Leite</a></li>
+               <li class="highlight with-sep"><a href="index.html" title="">Sair</a></li>                             
+            </ul>
+         </nav>
+         <a class="menu-toggle" href="#"><span>Menu</span></a>   
+      </div>        
+   </header>
 
-      <!-- Header -->
-      <header>
+   <!-- Formulário para realizar login no sistema -->
+   <section id="process">  
+      <div class="row">
+         <center>
+            <div class="col s12"> 
+               <br><br>        
+               <h5><b>Venda de Leite</b></h5>
+            </center>
+            <br>
+         </div>
+
          <div class="row">
-            <div class="logo">
-               <a href="index.html"></a>
-            </div>
-
-            <nav id="main-nav-wrap">
-               <ul class="main-navigation">
-                  <li><a href="CadastroAnimal.html" title="">Cadastro de Animais</a></li>
-                  <li><a href="VisualizarExcluirAnimal.html" title="">Visualização/Exclusao de Animais</a></li>   
-                  <li><a href="perfil.html" title="">Controle Leiteiro</a></li>
-                  <li><a href="perfil.html" title="">Dieta</a></li>
-                  <li><a href="perfil.html" title="">Medicamentos</a></li>
-                  <li><a href="perfil.html" title="">Venda de Leite</a></li>
-                  <li class="highlight with-sep"><a href="index.html" title="">Sair</a></li>                             
-               </ul>
-            </nav>
-            <a class="menu-toggle" href="#"><span>Menu</span></a>   
-         </div>        
-      </header>
-
-      <!-- Formulário para realizar login no sistema -->
-      <section id="process">  
-         <div class="row">
-            <center>
-               <div class="col s12"> 
-                  <br><br>        
-                  <h5><b>Venda de Leite</b></h5>
-               </center>
-               <br>
-            </div>
-
-            <div class="row">
-               <div class="input-field col s2">
-                <input type="text" id="ano"></input>
-                <label for="ano"><b>Ano</b></label>
-             </div>
-             <div class="col s1"></div>
-             <div class="input-field col s2">
-                <input type="text" id="mes"></input>
-                <label for="mes"><b>Mês</b></label>
-             </div>
+            <div class="input-field col s2">
+             <input type="text" id="ano"></input>
+             <label for="ano"><b>Ano</b></label>
           </div>
+          <div class="col s1"></div>
+          <div class="input-field col s2">
+             <input type="text" id="mes"></input>
+             <label for="mes"><b>Mês</b></label>
+          </div>
+       </div>
 
-          <div class="row">
-             <div class="col s2"></div>
-             <div class="col s12">
-               <table style="width:100%">
+       <div class="row">
+          <div class="col s2"></div>
+          <div class="col s12">
+            <table class="striped" style="width:100%">
+               <thead>
                  <tr>
                    <th>Dia</th>
                    <th>Func</th> 
@@ -104,64 +95,968 @@
                    <th>Nº Vacas</th>
                    <th>Total</th>
                 </tr>
+             </thead>
 
+             <tbody>
                 <tr>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                </tr>
+                   <td>
+                      <input type = "date">
+                   </td>
+                   <td>
+                     <input type="text" name="">
+                  </td>
+                  <td>
+                     <input type="text" name="">
+                  </td>
+                  <td>
+                     <input type="text" name="">
+                  </td>
+                  <td>
+                     <input type="text" name="">
+                  </td>
+                  <td>
+                     <input type="text" name="">
+                  </td>
+                  <td>
+                     <input type="text" name="">
+                  </td>
+                  <td>
+                     <input type="text" name="">
+                  </td>
+                  <td>
+                     <input type="text" name="">
+                  </td>
+                  <td>
+                     <input type="text" name="">
+                  </td>
+               </tr>
 
-                 <tr>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                   <td><b></b></td>
-                </tr>
-             </table>
-          </div>
-       </div>
+               <tr>
+                <td>
+                   <input type = "date">
+                </td>
+                <td>
+                  <input type="text" name="">
+               </td>
+               <td>
+                  <input type="text" name="">
+               </td>
+               <td>
+                  <input type="text" name="">
+               </td>
+               <td>
+                  <input type="text" name="">
+               </td>
+               <td>
+                  <input type="text" name="">
+               </td>
+               <td>
+                  <input type="text" name="">
+               </td>
+               <td>
+                  <input type="text" name="">
+               </td>
+               <td>
+                  <input type="text" name="">
+               </td>
+               <td>
+                  <input type="text" name="">
+               </td>
+            </tr>
 
-       <div class="row">
-         <div class="input-field col s3">
-          <input type="text" id="numVacasLactacao"></input>
-          <label for="numVacasLactacao"><b>Nº de Vacas em Lactação/Médio: </b></label>
-       </div>
-       <div class="col s1"></div>
-       <div class="input-field col s3">
-          <input type="text" id="producaoMedia"></input>
-          <label for="producaoMedia"><b>Produção Média/Vaca/Dia: </b></label>
-       </div>
-       <div class="col s1"></div>
-       <div class="input-field col s3">
-          <input type="text" id="producaoMediaLeite"></input>
-          <label for="producaoMediaLeite"><b>Produção Média/Leite/Dia: </b></label>
-       </div>
-    </div>
+            <tr>
+             <td>
+                <input type = "date">
+             </td>
+             <td>
+               <input type="text" name="">
+            </td>
+            <td>
+               <input type="text" name="">
+            </td>
+            <td>
+               <input type="text" name="">
+            </td>
+            <td>
+               <input type="text" name="">
+            </td>
+            <td>
+               <input type="text" name="">
+            </td>
+            <td>
+               <input type="text" name="">
+            </td>
+            <td>
+               <input type="text" name="">
+            </td>
+            <td>
+               <input type="text" name="">
+            </td>
+            <td>
+               <input type="text" name="">
+            </td>
+         </tr>
 
-    <div class="row">
-      <div class="input-field col s3">
-       <input type="text" id="racaotot"></input>
-       <label for="racaotot"><b>Consumo de Ração Total/Mês: </b></label>
-    </div>
-    <div class="col s1"></div>
-    <div class="input-field col s3">
-       <input type="text" id="producaoMedia"></input>
-       <label for="producaoMedia"><b>Relação Leite/Ração: </b></label>
-    </div>
+         <tr>
+          <td>
+             <input type = "date">
+          </td>
+          <td>
+            <input type="text" name="">
+         </td>
+         <td>
+            <input type="text" name="">
+         </td>
+         <td>
+            <input type="text" name="">
+         </td>
+         <td>
+            <input type="text" name="">
+         </td>
+         <td>
+            <input type="text" name="">
+         </td>
+         <td>
+            <input type="text" name="">
+         </td>
+         <td>
+            <input type="text" name="">
+         </td>
+         <td>
+            <input type="text" name="">
+         </td>
+         <td>
+            <input type="text" name="">
+         </td>
+      </tr>
+
+      <tr>
+       <td>
+          <input type = "date">
+       </td>
+       <td>
+         <input type="text" name="">
+      </td>
+      <td>
+         <input type="text" name="">
+      </td>
+      <td>
+         <input type="text" name="">
+      </td>
+      <td>
+         <input type="text" name="">
+      </td>
+      <td>
+         <input type="text" name="">
+      </td>
+      <td>
+         <input type="text" name="">
+      </td>
+      <td>
+         <input type="text" name="">
+      </td>
+      <td>
+         <input type="text" name="">
+      </td>
+      <td>
+         <input type="text" name="">
+      </td>
+   </tr>
+
+   <tr>
+     <td>
+       <input type = "date">
+    </td>
+    <td>
+      <input type="text" name="">
+   </td>
+   <td>
+      <input type="text" name="">
+   </td>
+   <td>
+      <input type="text" name="">
+   </td>
+   <td>
+      <input type="text" name="">
+   </td>
+   <td>
+      <input type="text" name="">
+   </td>
+   <td>
+      <input type="text" name="">
+   </td>
+   <td>
+      <input type="text" name="">
+   </td>
+   <td>
+      <input type="text" name="">
+   </td>
+   <td>
+      <input type="text" name="">
+   </td>
+</tr>
+
+<tr>
+  <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+  <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+  <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+  <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+  <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+  <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+  <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+  <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+<tr>
+ <td>
+    <input type = "date">
+ </td>
+ <td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+<td>
+   <input type="text" name="">
+</td>
+</tr>
+
+
+
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="row">
+   <div class="input-field col s3">
+    <input type="text" id="numVacasLactacao"></input>
+    <label for="numVacasLactacao"><b>Nº de Vacas em Lactação/Médio: </b></label>
  </div>
+ <div class="col s1"></div>
+ <div class="input-field col s3">
+    <input type="text" id="producaoMedia"></input>
+    <label for="producaoMedia"><b>Produção Média/Vaca/Dia: </b></label>
+ </div>
+ <div class="col s1"></div>
+ <div class="input-field col s3">
+    <input type="text" id="producaoMediaLeite"></input>
+    <label for="producaoMediaLeite"><b>Produção Média/Leite/Dia: </b></label>
+ </div>
+</div>
+
+<div class="row">
+   <div class="input-field col s3">
+    <input type="text" id="racaotot"></input>
+    <label for="racaotot"><b>Consumo de Ração Total/Mês: </b></label>
+ </div>
+ <div class="col s1"></div>
+ <div class="input-field col s3">
+    <input type="text" id="producaoMedia"></input>
+    <label for="producaoMedia"><b>Relação Leite/Ração: </b></label>
+ </div>
+</div>
 </section>   
 
 <!-- Footer -->
