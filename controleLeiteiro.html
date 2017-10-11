@@ -15,7 +15,7 @@
 
  <!-- Ajustando o header -->
  <style type="text/css">
-  header {
+ header {
    width: 100%;
    position: absolute;
    left: 0;
@@ -34,24 +34,33 @@
 
  <!-- Header -->
  <header>
-  <div class="row">
-   <div class="logo">
-    <a href="index.html"></a>
-  </div>
-
-  <nav id="main-nav-wrap">
-    <ul class="main-navigation">
-     <li><a href="CadastroAnimal.html" title="">Cadastro de Animais</a></li>
-     <li><a href="VisualizarExcluirAnimal.html" title="">Visualização/Exclusao de Animais</a></li>   
-     <li><a href="controleLeiteiro.html" title="">Controle Leiteiro</a></li>
-     <li><a href="perfil.html" title="">Dieta</a></li>
-     <li><a href="medicamentos.html" title="">Medicamentos</a></li>
-     <li><a href="vendaLeite.html" title="">Venda de Leite</a></li>
-     <li class="highlight with-sep"><a href="index.html" title="">Sair</a></li>                             
-   </ul>
- </nav>
- <a class="menu-toggle" href="#"><span>Menu</span></a>   
-</div>        
+  <ul id="slide-out" class="side-nav">
+    <br>
+    <li>
+      <div class="logo">
+        <img class="background center-block responsive" src="logo.png">
+      </div>
+    </li>
+    <br>
+    <li><a class="waves-effect" href="CadastroAnimal.html">Cadastro de Animais</a></li>
+    <li><a class="waves-effect" href="VisualizarExcluirAnimal.html">Visualizar e Excluir Animal</a></li>
+    <li><a class="waves-effect" href="EditarAnimal.html">Editar Animal</a></li>
+    <li><a class="waves-effect" href="Dieta.html">Dieta</a></li>
+    <li><a class="waves-effect" href="medicamentos.html">Prescrição de Medicamentos</a></li>
+    <li><a class="waves-effect" href="controleLeiteiro.html">Controle Leiteiro</a></li>
+    <li><a class="waves-effect" href="vendaLeite.html">Venda de Leite</a></li>
+    <li><a class="waves-effect" href="RepParto.html">Reprodução - Parto</a></li>
+    <li><a class="waves-effect" href="RepInseminacao.html">Reprodução - Inseminação</a></li>
+    <li><a class="waves-effect" href="RepDiagnostico">Reprodução - Diagnóstico</a></li>
+    <li><a class="waves-effect" href="index.html">Sair</a></li>
+    <!--<li><div class="divider"></div></li>-->
+    <!--<li><a class="subheader">Subheader</a></li>-->
+  </ul>
+  <ul class="left ">
+    <li>
+      <button style="top: 15px;" data-activates="slide-out" class="waves-effect waves-light btn-flat button-collapse green-text #FFFFFF"><b>Menu</b></button>
+    </li>
+  </ul>
 </header>
 
 <!-- Formulário para realizar login no sistema -->
@@ -315,5 +324,6 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script src="js/materialize.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>

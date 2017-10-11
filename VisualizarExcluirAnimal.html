@@ -15,15 +15,15 @@
 
    <!-- Ajustando o header -->
    <style type="text/css">
-      header {
-         width: 100%;
-         position: absolute;
-         left: 0;
-         top: 0px;
-         z-index: 600;
-         background: #14171c;
-      }
-   </style>
+   header {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 600;
+      background: #14171c;
+   }
+</style>
 
 </head>
 
@@ -31,68 +31,83 @@
 
    <!-- Header -->
    <header>
-      <div class="row">
-         <div class="logo">
-            <a href="index.html"></a>
+      <ul id="slide-out" class="side-nav">
+         <br>
+         <li>
+          <div class="logo">
+           <img class="background center-block responsive" src="logo.png">
+        </div>
+     </li>
+     <br>
+     <li><a class="waves-effect" href="CadastroAnimal.html">Cadastro de Animais</a></li>
+     <li><a class="waves-effect" href="VisualizarExcluirAnimal.html">Visualizar e Excluir Animal</a></li>
+     <li><a class="waves-effect" href="EditarAnimal.html">Editar Animal</a></li>
+     <li><a class="waves-effect" href="Dieta.html">Dieta</a></li>
+     <li><a class="waves-effect" href="medicamentos.html">Prescrição de Medicamentos</a></li>
+     <li><a class="waves-effect" href="controleLeiteiro.html">Controle Leiteiro</a></li>
+     <li><a class="waves-effect" href="vendaLeite.html">Venda de Leite</a></li>
+     <li><a class="waves-effect" href="RepParto.html">Reprodução - Parto</a></li>
+     <li><a class="waves-effect" href="RepInseminacao.html">Reprodução - Inseminação</a></li>
+     <li><a class="waves-effect" href="RepDiagnostico">Reprodução - Diagnóstico</a></li>
+     <li><a class="waves-effect" href="index.html">Sair</a></li>
+     <!--<li><div class="divider"></div></li>-->
+     <!--<li><a class="subheader">Subheader</a></li>-->
+  </ul>
+  <ul class="left ">
+    <li>
+     <button style="top: 15px;" data-activates="slide-out" class="waves-effect waves-light btn-flat button-collapse green-text #FFFFFF"><b>Menu</b></button>
+  </li>
+</ul>
+</header>
+
+<!-- Formulário para visualização e exclusão de animais -->
+<section id="process">  
+   <br>
+
+   <div class="row">
+      <form id="formVisExcAnimais">
+         
+         <div class="row">
+            <div class="input-field col s2">
+               <input type="text" id="pesquisarAnimal"></input>
+               <label for="pesquisarAnimal"><b>Pesquisar</b></label>
+            </div>
+            <div class="col s1">
+               <a id="pesquisar" class="btn-floating waves-effect waves-light" style="background: green">
+                  <i class="material-icons">search</i>
+               </a>
+            </div>
+            <div class="col s5"></div>
+            <div class="col s2">
+               <a class="waves-effect waves-light btn modal-trigger" href="#modalExcluirAnimal" id="excluirAnimal" style="background: green">
+                  <i class="material-icons right">delete</i>Excluir Animal
+               </a>
+            </div>
+            <div class="col s2">
+               <a class="waves-effect waves-light btn" id="editarAnimal" style="background: green">
+                  <i class="material-icons right">edit</i>Editar Animal
+               </a>
+            </div>
+            <br><br><hr>
          </div>
 
-         <nav id="main-nav-wrap">
-            <ul class="main-navigation">
-               <li class="highlight with-sep"><a href="index.html" title="" style="color: green">Sair</a></li>                             
-            </ul>
-         </nav>
-         <a class="menu-toggle" href="#"><span>Menu</span></a>   
-      </div>        
-   </header>
-
-   <!-- Formulário para visualização e exclusão de animais -->
-   <section id="process">  
-      <br>
-
-      <div class="row">
-         <form id="formVisExcAnimais">
-            
-            <div class="row">
-               <div class="input-field col s2">
-                  <input type="text" id="pesquisarAnimal"></input>
-                  <label for="pesquisarAnimal"><b>Pesquisar</b></label>
-               </div>
-               <div class="col s1">
-                  <a id="pesquisar" class="btn-floating waves-effect waves-light" style="background: green">
-                     <i class="material-icons">search</i>
-                  </a>
-               </div>
-               <div class="col s5"></div>
-               <div class="col s2">
-                  <a class="waves-effect waves-light btn modal-trigger" href="#modalExcluirAnimal" id="excluirAnimal" style="background: green">
-                     <i class="material-icons right">delete</i>Excluir Animal
-                  </a>
-               </div>
-               <div class="col s2">
-                  <a class="waves-effect waves-light btn" id="editarAnimal" style="background: green">
-                     <i class="material-icons right">edit</i>Editar Animal
-                  </a>
-               </div>
-               <br><br><hr>
-            </div>
-
-            <!-- Modal Structure -->
-            <div id="modalExcluirAnimal" class="modal">
-               <div class="modal-content"> 
-                  <center><h4>Exclusão de Animal</h4></center>
-                  <p>
-                     <b>Data de baixa:</b>
-                     <input id="dataBaixa" type="date">
-                  </p>
-                  <p class="input-field">
-                     <input type="text" id="motivoBaixa"></input>
-                     <label for="motivoBaixa"><b>Motivo de Baixa</b></label>
-                  </p>
-                  <br>
-                  <p>
-                     <center>
-                        <a class="waves-effect waves-light btn" id="ConfirmExclusao" style="background: green">
-                           <i class="material-icons right">done</i>Confirmar</a>
+         <!-- Modal Structure -->
+         <div id="modalExcluirAnimal" class="modal">
+            <div class="modal-content"> 
+               <center><h4>Exclusão de Animal</h4></center>
+               <p>
+                  <b>Data de baixa:</b>
+                  <input id="dataBaixa" type="date">
+               </p>
+               <p class="input-field">
+                  <input type="text" id="motivoBaixa"></input>
+                  <label for="motivoBaixa"><b>Motivo de Baixa</b></label>
+               </p>
+               <br>
+               <p>
+                  <center>
+                     <a class="waves-effect waves-light btn" id="ConfirmExclusao" style="background: green">
+                        <i class="material-icons right">done</i>Confirmar</a>
                      </center>
                   </p>
                </div>
@@ -339,5 +354,6 @@
    <script src="js/main.js"></script>
    <script src="js/materialize.js"></script>
    <script src="js/VisExclAnimal.js"></script>
+   <script src="js/menu.js"></script>
 </body>
 </html>
