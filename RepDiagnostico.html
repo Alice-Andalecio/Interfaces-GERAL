@@ -38,13 +38,7 @@
 
          <nav id="main-nav-wrap">
             <ul class="main-navigation">
-               <li><a href="CadastroAnimal.html" title="">Cadastro de Animais</a></li>
-               <li><a href="VisualizarExcluirAnimal.html" title="">Visualização/Exclusao de Animais</a></li>   
-               <li><a href="perfil.html" title="">Controle Leiteiro</a></li>
-               <li><a href="perfil.html" title="">Dieta</a></li>
-               <li><a href="perfil.html" title="">Medicamentos</a></li>
-               <li><a href="perfil.html" title="">Venda de Leite</a></li>
-               <li class="highlight with-sep"><a href="index.html" title="">Sair</a></li>                             
+               <li class="highlight with-sep"><a href="index.html" title="" style="color: green">Sair</a></li>                             
             </ul>
          </nav>
          <a class="menu-toggle" href="#"><span>Menu</span></a>   
@@ -57,14 +51,22 @@
 
       <div class="row">
          <form id="formDiagnostico" class="col s12">
+
+            <div class="row section-intro">
+               <div class="col-twelve">
+                  <br>
+                  <h2 style="color: green">Reprodução - Diagnóstico</h2>
+                  <br>
+               </div>         
+            </div>
+
             <div class="row">
-               <div class="col s4"></div>
-               <div class="input-field col s4">
+               <div class="input-field col s3">
                   <input type="text" id="pesquisarAnimal"></input>
                   <label for="pesquisarAnimal"><b>Pesquisar Animal</b></label>
                </div>
                <div class="col s1">
-                  <a id="pesquisar" class="btn-floating waves-effect waves-light"><i class="material-icons">search</i></a>
+                  <a id="pesquisar" class="btn-floating waves-effect waves-light" style="background: green"><i class="material-icons">search</i></a>
                </div>
             </div>
 
@@ -75,32 +77,14 @@
             </div>
 
             <div class="row">
-               <div class="col s3">
-                  <select id="setor" name="setor" class="browser-default">
-                     <option value="" disabled selected>Defina o Setor.</option>
-                     <option value="1">Option 1</option>
-                     <option value="2">Option 2</option>
-                     <option value="3">Option 3</option>
-                  </select>
-               </div>
-               <div class="col s1"></div>
-               <div class="col s3">
-                  <select id="grupo" name="grupo" class="browser-default">
-                     <option value="" disabled selected>Defina o Grupo.</option>
-                     <option value="1">Option 1</option>
-                     <option value="2">Option 2</option>
-                     <option value="3">Option 3</option>
-                  </select>
-               </div>
-               <div class="col s1"></div>
-               <div class="input-field col s2">
-                  <input type="text" id="animal"></input>
-                  <label for="animal"><b>Animal</b></label>
-               </div>
-               <div class="col s1"></div>
-               <div class="input-field col s1">
+               <div class="input-field col s3">
                   <input type="text" id="numAnimal"></input>
-                  <label for="numAnimal"><b>Nº</b></label>
+                  <label for="numAnimal"><b>Nº do Animal</b></label>
+               </div>
+               <div class="col s1"></div>
+               <div class="input-field col s3">
+                  <input type="text" id="nomAnimal"></input>
+                  <label for="nomAnimal"><b>Nome do Animal</b></label>
                </div>
             </div>
 
@@ -142,9 +126,8 @@
                </div>
             </div>
 
-            <div class="row">
-               <hr>
-               <br>
+            <div class="row" style="color: green">
+               <hr><br>
                <i class="material-icons">edit</i>
                <b>Preencha os campos referentes ao diagnóstico de gestação:</b>
                <br><br>
@@ -196,9 +179,8 @@
                </div>
             </div>
 
-            <div class="row">
-               <hr>
-               <br>
+            <div class="row" style="color: green">
+               <hr><br>
                <i class="material-icons">edit</i>
                <b>Preencha os campos referentes ao cio da vaca:</b>
                <br><br>
@@ -243,9 +225,8 @@
                </div>
             </div>
 
-            <div class="row">
-               <hr>
-               <br>
+            <div class="row" style="color: green">
+               <hr><br>
                <i class="material-icons">edit</i>
                <b>Preencha os campos referentes ao Exame Ginecológico:</b>
                <br><br>
@@ -273,9 +254,8 @@
                </div>
             </div>
 
-            <div class="row">
-               <hr>
-               <br>
+            <div class="row" style="color: green">
+               <hr><br>
                <i class="material-icons">edit</i>
                <b>Observações:</b>
                <br><br>
@@ -290,7 +270,7 @@
             <div class="row">
                <br>
                <div class="col s3">
-                  <a class="waves-effect waves-light btn" id="salvarReg">
+                  <a class="waves-effect waves-light btn" id="salvarDiag" style="background: green">
                   <i class="material-icons right">done</i>Salvar</a>
                </div>
             </div>
@@ -345,7 +325,7 @@
             <div class="col-twelve">
                <div class="copyright"></div>
                <div id="go-top" style="display: block;">
-                  <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
+                  <a class="smoothscroll" title="Back to Top" href="#top" style="background: green"><i class="icon ion-android-arrow-up"></i></a>
                </div>         
             </div>
          </div>       

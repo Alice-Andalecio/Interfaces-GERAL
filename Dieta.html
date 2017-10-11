@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
    <meta charset="utf-8">
-   <title>Inseminação ou Cobrição</title>
+   <title>Diagnóstico</title>
    <meta name="description" content="">  
    <meta name="author" content="">
 
@@ -31,29 +31,43 @@
 
    <!-- Header -->
    <header>
-      <div class="row">
-         <div class="logo">
-            <a href="index.html"></a>
-         </div>
-
-         <nav id="main-nav-wrap">
-            <ul class="main-navigation">
-               <li class="highlight with-sep"><a href="index.html" title="" style="color: green">Sair</a></li>                             
-            </ul>
-         </nav>
-         <a class="menu-toggle" href="#"><span>Menu</span></a>   
-      </div>        
+      <ul id="slide-out" class="side-nav">
+      <br>
+      <li>
+        <div class="logo">
+          <img class="background center-block responsive" src="imgs/logo.png">
+        </div>
+      </li>
+      <br>
+      <li><a class="waves-effect" href="index.html">Página Inicial</a></li>
+      <li><a class="waves-effect" href="#!">Modelo de Provas/Trabalhos</a></li>
+      <li><a class="waves-effect" href="Forum/Web/Fórum.html">Fórum</a></li>
+      <li><a class="waves-effect" href="Upload/index.html">Download/Upload Aplicativos</a></li>
+      <li><a class="waves-effect" href="Correcao/LayoutCorrecaoProvas.html">Correção Provas e Trabalhos</a></li>
+      <li><a class="waves-effect" href="Mural/web/index.html">Mural</a></li>
+      <li><a class="waves-effect" href="Chat/index.html">Chat</a></li>
+      <li><a class="waves-effect" href="#!">Repositório de Fotos</a></li>
+      <li><a class="waves-effect" href="#!">Banco de Questões</a></li>
+      <li><a class="waves-effect" href="#!">Calendário</a></li>
+      <!--<li><div class="divider"></div></li>-->
+      <!--<li><a class="subheader">Subheader</a></li>-->
+    </ul>
+      <ul class="left ">
+        <li>
+          <button data-activates="slide-out" class="waves-effect waves-light btn-flat button-collapse white-text light-blue darken-4">Menu</button>
+        </li>
+      </ul>        
    </header>
 
-   <!-- Formulário: Controle Reprodutivo - Inseminação/Cobrição -->
-   <section id="process">  
+   <!-- Formulário: Controle Reprodutivo - Diagnóstico -->
+   <section id="process"> 
       <div class="row">
-         <form id="formInseminacao" class="col s12">
+         <form id="formDiagnostico" class="col s12">
 
             <div class="row section-intro">
                <div class="col-twelve">
                   <br>
-                  <h2 style="color: green">Reprodução - Inseminação</h2>
+                  <h2 style="color: green">Reprodução - Diagnóstico</h2>
                   <br>
                </div>         
             </div>
@@ -102,26 +116,9 @@
                   <br>
                   <input type="checkbox" id="gestantes"></input>
                   <label for="gestantes"><b>Gestantes</b></label>
-               </div>
-               <div class="col s1"></div>
-               <div class="col s2">
-                  <b>Lançamento:</b>
                   <br>
-                  <input type="checkbox" id="inseminacao"></input>
-                  <label for="inseminacao"><b>Inseminação</b></label>
-                  <br>
-                  <input type="checkbox" id="cobricao"></input>
-                  <label for="cobricao"><b>Cobrição</b></label>
-               </div>
-               <div class="col s1"></div>
-               <div class="col s3">
-                  <b>Cobrição:</b>
-                  <br>
-                  <input type="checkbox" id="somSetor"></input>
-                  <label for="somSetor"><b>Somente do Setor</b></label>
-                  <br>
-                  <input type="checkbox" id="todos"></input>
-                  <label for="todos"><b>Todos da Fazenda</b></label>
+                  <input type="checkbox" id="emCrescimento"></input>
+                  <label for="emCrescimento"><b>Em Crescimento</b></label>
                </div>
                <div class="col s1"></div>
                <div class="col s2">
@@ -144,41 +141,53 @@
             <div class="row" style="color: green">
                <hr><br>
                <i class="material-icons">edit</i>
-               <b>Preencha os campos referentes à inseminação/cobrição da vaca:</b>
+               <b>Preencha os campos referentes ao diagnóstico de gestação:</b>
                <br><br>
             </div>
 
             <div class="row">
                <div class=" input-field col s2">
-                  <p>Data da Inseminação:</p>
-                  <input type="date" id="dataInseminacao" name="dataInseminacao">
+                  <p>Data do Diagnóstico:</p>
+                  <input type="date" id="dataDiagnostico" name="dataDiagnostico">
                </div>
                <div class="col s1"></div>
                <div class=" input-field col s2">
-               <p>Hora da Inseminação:</p>
-                  <input type="time" id="horaInseminacao" name="horaInseminacao">
+               <p>Hora do Diagnóstico:</p>
+                  <input type="time" id="horaDiagnostico" name="horaDiagnostico">
                </div>
             </div>
 
             <div class="row">
-               <div class="input-field col s2">
-                  <input type="text" id="reprodutor"></input>
-                  <label for="reprodutor"><b>Reprodutor</b></label>
+               <br>
+               <div class="col s2">
+                  <select id="diagnostico" name="diagnostico" class="browser-default">
+                     <option value="" disabled selected>Diagnóstico</option>
+                     <option value="1">Positivo</option>
+                     <option value="2">Negativo</option>
+                  </select>
                </div>
                <div class="col s1"></div>
-               <div class="input-field col s2">
-                  <input type="text" id="raca"></input>
-                  <label for="raca"><b>Raça</b></label>
-               </div>
-               <div class="col s1"></div>
-               <div class="input-field col s2">
-                  <input type="text" id="inseminador"></input>
-                  <label for="inseminador"><b>Inseminador</b></label>
+               <div class="col s2">
+                  <select id="sexo" name="sexo" class="browser-default">
+                     <option value="" disabled selected>Sexo</option>
+                     <option value="1">Fêmea</option>
+                     <option value="2">Macho</option>
+                  </select>
                </div>
                <div class="col s1"></div>
                <div class="input-field col s1">
-                  <input type="number" id="numDoses"></input>
-                  <label for="numDoses"><b>Nº Doses</b></label>
+                  <input type="number" id="numDias"></input>
+                  <label for="numDias"><b>Nº Dias</b></label>
+               </div>
+               <div class="col s1"></div>
+               <div class="input-field col s2">
+                  <input type="text" id="reprodutor"></input>
+                  <label for="reprodutor"><b>Redrodutor</b></label>
+               </div>
+               <div class="col s1"></div>
+               <div class="input-field col s1">
+                  <input type="text" id="raca"></input>
+                  <label for="raca"><b>Raça</b></label>
                </div>
             </div>
 
@@ -192,12 +201,12 @@
             <div class="row">
                <div class=" input-field col s2">
                   <p>Data do cio:</p>
-                  <input type="date" id="dataCio" name="horaCio">
+                  <input type="date" id="dataCio" name="dataCio">
                </div>
                <div class="col s1"></div>
                <div class=" input-field col s2">
                <p>Hora do cio:</p>
-                  <input type="time" id="dataCio" name="horaCio">
+                  <input type="time" id="horaCio" name="horaCio">
                </div>
             </div>
 
@@ -219,22 +228,41 @@
                   </select>
                </div>
                <div class="col s1"></div>
-               <div class="input-field col s2">
+               <div class="col s2">
                   <select id="te" name="te" class="browser-default">
                      <option value="" disabled selected>TE</option>
                      <option value="1">Sim</option>
                      <option value="2">Não</option>
                   </select>
                </div>
-               <div class="col s1"></div>
-               <div class="input-field col s1">
-                  <input type="text" id="ecc"></input>
-                  <label for="ecc"><b>ECC</b></label>
+            </div>
+
+            <div class="row" style="color: green">
+               <hr><br>
+               <i class="material-icons">edit</i>
+               <b>Preencha os campos referentes ao Exame Ginecológico:</b>
+               <br><br>
+            </div>
+
+            <div class="row">
+               <div class="input-field col s2">
+                  <input type="text" id="utero"></input>
+                  <label for="utero"><b>Útero</b></label>
                </div>
                <div class="col s1"></div>
-               <div class="input-field col s1">
-                  <input type="text" id="proIATF"></input>
-                  <label for="proIATF"><b>Prot. IATF</b></label>
+               <div class="input-field col s2">
+                  <input type="text" id="ovD"></input>
+                  <label for="ovD"><b>Ovário Direito</b></label>
+               </div>
+               <div class="col s1"></div>
+               <div class="input-field col s2">
+                  <input type="text" id="ovE"></input>
+                  <label for="ovE"><b>Ovário Esquerdo</b></label>
+               </div>
+               <div class="col s1"></div>
+               <div class="input-field col s2">
+                  <input type="text" id="base"></input>
+                  <label for="base"><b>Base Recom.</b></label>
                </div>
             </div>
 
@@ -254,7 +282,7 @@
             <div class="row">
                <br>
                <div class="col s3">
-                  <a class="waves-effect waves-light btn" id="salvarIns" style="background: green">
+                  <a class="waves-effect waves-light btn" id="salvarDiag" style="background: green">
                   <i class="material-icons right">done</i>Salvar</a>
                </div>
             </div>
@@ -326,5 +354,6 @@
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
    <script src="js/materialize.js"></script>
+   <script src="js/menu.js"></script>
 </body>
 </html>
