@@ -15,15 +15,15 @@
 
   <!-- Ajustando o header -->
   <style type="text/css">
-  header {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    z-index: 600;
-    background: #14171c;
-  }
-</style>
+    header {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 600;
+      background: #14171c;
+    }
+  </style>
 </head>
 
 <body id="top">
@@ -111,7 +111,7 @@
       </div>
       <br><hr>
     </div>
-
+    
     <div class="row">  
       <div class="input-field col s12" style="color: green"> 
         <i class="material-icons">edit</i>
@@ -120,128 +120,161 @@
       </div>
     </div>
 
-    <!-- A div "divCamposEmbriao" só deve ser exibida caso seja selecionada o opção de cadastro de Embrião -->
-    <div class="row esconder" id="divCamposEmbriao">
-      <div class="col s2">
-        <select class="browser-default" name="tipoEmbriao" id="tipoEmbriao">
-          <option value="" disabled selected>Tipo de Embrião</option>
-          <option value="1">Fresco</option>
-          <option value="2">Congelado</option>
-        </select>
+    <!-- Todos os campos dentro da div "divCampAnimal" são específicos para cadastro de "Animal" -->
+    
+    <div class="esconder" id="divCampAnimal">
+      <div class="row">
+        <div class="input-field col s2">
+          <input type="text" id="numSISBOV"></input>
+          <label for="numSISBOV"><b>Nº SISBOV</b></label>
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s3">
+          <input type="text" id="brincoEle"></input>
+          <label for="brincoEle"><b>Brinco Eletrônico</b></label>
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s2">
+          <input type="text" id="numRGN"></input>
+          <label for="numRGN"><b>RGN</b></label>
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s2">
+          <input type="text" id="numRGD"></input>
+          <label for="numRGD"><b>RGD</b></label>
+        </div>
       </div>
-      <div class="col s1"></div>
-      <div class="col s3">
-        <select class="browser-default" name="classificacaoEmbriao" id="classificacaoEmbriao">
-          <option value="" disabled selected>Classificação do Embrião</option>
-          <option value="1">Blastocisto</option>
-          <option value="2">Blastocisto Expandido</option>
-          <option value="3">Mórula</option>
-        </select>
+
+      <div class="row">
+        <div class="input-field col s2">
+          <input type="text" id="numAnimal"></input>
+          <label for="numAnimal"><b>Nº do Animal</b></label>
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s3">
+          <input type="text" id="nomCompAnimal"></input>
+          <label for="nomCompAnimal"><b>Nome Completo do Animal</b></label>
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s2">
+          <input type="text" id="nomAnimal"></input>
+          <label for="nomAnimal"><b>Nome Resumido</b></label>
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s1">
+          <input type="text" id="peso"></input>
+          <label for="peso"><b>Peso</b></label>
+        </div>
+        <div class="input-field col s1">
+          <input type="text" id="idade"></input>
+          <label for="idade"><b>Idade</b></label>
+        </div>
+      </div>  
+
+      <div class="row">
+        <div class="input-field col s2">
+          <b>Nascimento</b> 
+          <input type="date" name="nascimento" id="nascimento">
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s3">
+          <b>Entrada</b> 
+          <input type="date" name="entrada" id="entrada">
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s2">
+          <b>Desmama</b> 
+          <input type="date" name="desmama" id="desmama">
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s2">
+          <b>Aptidão</b> 
+          <input type="date" name="aptidao" id="aptidao">
+        </div>
       </div>
-      <br><br><hr>
+
+      <div class="row">
+        <div class="col s2">
+          <select class="browser-default" name="pelagem" id="pelagem">
+            <option value="" disabled selected>Pelagem</option>
+            <option value="1">Amarelada</option>
+            <option value="2">Branco</option>
+            <option value="3">Branco e Preta</option>
+            <option value="4">Cinzenta</option>
+            <option value="5">Chita</option>
+            <option value="6">Parda</option>
+            <option value="7">Vermelho e branco</option>
+            <option value="3">Parda</option>
+            <option value="2">Outro</option>
+          </select>
+        </div>
+        <div class="col s1"></div>
+        <div class="col s3">
+          <select class="browser-default" name="categoria" id="categoria">
+            <option value="" disabled selected>Categoria</option>
+            <option value="1">Vacas em Lactação</option>
+            <option value="2">Vacas Pré-parto</option>
+            <option value="3">Vacas Secas</option>
+            <option value="4">Bezerras Lactantes</option>
+            <option value="5">Novilhas</option>
+            <option value="6">Touro</option>
+          </select>
+        </div>
+        <br><br><hr>
+      </div>
     </div>
 
-    <div class="row">
-      <div class="input-field col s2">
-        <input type="text" id="numSISBOV"></input>
-        <label for="numSISBOV"><b>Nº SISBOV</b></label>
+    <!-- Todos os campos dentro da div "divCampEmbriao" são específicos para cadastro de "Embrião" -->
+
+    <div class="esconder" id="divCampEmbriao">
+      <div class="row">
+        <div class="input-field col s3"> 
+          <b>Entrada</b>
+          <input type="date" name="entradaEmbriao" id="entradaEmbriao">
+        </div>
       </div>
-      <div class="col s1"></div>
-      <div class="input-field col s3">
-        <input type="text" id="brincoEle"></input>
-        <label for="brincoEle"><b>Brinco Eletrônico</b></label>
-      </div>
-      <div class="col s1"></div>
-      <div class="input-field col s2">
-        <input type="text" id="numRGN"></input>
-        <label for="numRGN"><b>RGN</b></label>
-      </div>
-      <div class="col s1"></div>
-      <div class="input-field col s2">
-        <input type="text" id="numRGD"></input>
-        <label for="numRGD"><b>RGD</b></label>
+      
+      <div class="row">
+        <br>
+        <div class="input-field col s3">
+          <input type="text" id="numEmbriao"></input>
+          <label for="numEmbriao"><b>Nº do Embrião</b></label>
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s3">
+          <select class="browser-default" name="tipoEmbriao" id="tipoEmbriao">
+            <option value="" disabled selected>Tipo de Embrião</option>
+            <option value="1">Fresco</option>
+            <option value="2">Congelado</option>
+          </select>
+        </div> 
+        <div class="col s1"></div>
+        <div class="input-field col s3">
+          <select class="browser-default" name="classificacaoEmbriao" id="classificacaoEmbriao">
+            <option value="" disabled selected>Classificação do Embrião</option>
+            <option value="1">Blastocisto</option>
+            <option value="2">Blastocisto Expandido</option>
+            <option value="3">Mórula</option>
+          </select>
+        </div>
+        <br><br><br><hr>
       </div>
     </div>
 
-    <div class="row">
-      <div class="input-field col s2">
-        <input type="text" id="numAnimal"></input>
-        <label for="numAnimal"><b>Nº do Animal</b></label>
-      </div>
-      <div class="col s1"></div>
-      <div class="input-field col s3">
-        <input type="text" id="nomCompAnimal"></input>
-        <label for="nomCompAnimal"><b>Nome Completo do Animal</b></label>
-      </div>
-      <div class="col s1"></div>
-      <div class="input-field col s2">
-        <input type="text" id="nomAnimal"></input>
-        <label for="nomAnimal"><b>Nome Resumido</b></label>
-      </div>
-      <div class="col s1"></div>
-      <div class="input-field col s1">
-        <input type="text" id="peso"></input>
-        <label for="peso"><b>Peso</b></label>
-      </div>
-      <div class="input-field col s1">
-        <input type="text" id="idade"></input>
-        <label for="idade"><b>Idade</b></label>
-      </div>
-    </div>  
+    <!-- Todos os campos dentro da div "divCampSemen" são específicos para cadastro de "Sêmen" -->
 
-    <div class="row">
-      <div class="input-field col s2">
-        <b>Nascimento</b> 
-        <input type="date" name="nascimento" id="nascimento">
-      </div>
-      <div class="col s1"></div>
-      <div class="input-field col s3">
-        <b>Entrada</b> 
-        <input type="date" name="entrada" id="entrada">
-      </div>
-      <div class="col s1"></div>
-      <div class="input-field col s2">
-        <b>Desmama</b> 
-        <input type="date" name="desmama" id="desmama">
-      </div>
-      <div class="col s1"></div>
-      <div class="input-field col s2">
-        <b>Aptidão</b> 
-        <input type="date" name="aptidao" id="aptidao">
+    <div class="esconder" id="divCampSemen">
+      <div class="row">
+        <div class="input-field col s2">
+          <input type="text" id="numSemen"></input>
+          <label for="numSemen"><b>Nº do Sêmen</b></label>
+        </div>
+        <br><br><br><hr>
       </div>
     </div>
-
+    
     <div class="row">
-      <div class="col s2">
-        <select class="browser-default" name="pelagem" id="pelagem">
-          <option value="" disabled selected>Pelagem</option>
-          <option value="1">Amarelada</option>
-          <option value="2">Branco</option>
-          <option value="3">Branco e Preta</option>
-          <option value="4">Cinzenta</option>
-          <option value="5">Chita</option>
-          <option value="6">Parda</option>
-          <option value="7">Vermelho e branco</option>
-          <option value="3">Parda</option>
-          <option value="2">Outro</option>
-        </select>
-      </div>
-      <div class="col s1"></div>
-      <div class="col s3">
-        <select class="browser-default" name="categoria" id="categoria">
-          <option value="" disabled selected>Categoria</option>
-          <option value="1">Vacas em Lactação</option>
-          <option value="2">Vacas Pré-parto</option>
-          <option value="3">Vacas Secas</option>
-          <option value="4">Bezerras Lactantes</option>
-          <option value="5">Novilhas</option>
-          <option value="6">Touro</option>
-        </select>
-      </div>
-      <br><br><hr>
-    </div>
-
-    <div class="row">
+      <br>
       <div class="col s2">
         <b>Tipo de Raça:</b>
       </div>
@@ -253,6 +286,7 @@
         <input class="with-gap" name="tipoRaca" type="radio" id="racaMest"/>
         <label for="racaMest"><b>Mestiço</b></label>
       </div>
+      <br><br>
     </div>
 
     <div class="row esconder" id="divPorcentagemRaca">
