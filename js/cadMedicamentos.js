@@ -63,10 +63,12 @@ function AdicionarMedicamento(){
 
 	input.setAttribute('type', 'text');
 	input.setAttribute('id', 'nomMed' + numMed); //nomMed1
+	input.setAttribute('name', 'nomMed' + numMed); //nomMed1
 
 	label.setAttribute('for', 'nomMed' +numMed);
 
 	textarea.setAttribute('id', 'prescricaoMed' + numMed); //prescricaoMed1
+	textarea.setAttribute('name', 'prescricaoMed' + numMed); //prescricaoMed1
 	textarea.setAttribute('placeholder', 'Insira a prescrição e observações necessárias');
 
 	b1.innerHTML = "Insira o nome do medicamento";
