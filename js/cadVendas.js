@@ -75,39 +75,47 @@ function CriarTabela(){
 			input10 = document.createElement('input');
 
 			input1.setAttribute('type', 'text');
-			input1.setAttribute('id', 'data' + i);
+			input1.setAttribute('id', 'dia' + i); //dia1
+			input1.setAttribute('name', 'dia' + i); //dia1
 			input1.setAttribute('value', "\t\t" + i);
 			input1.setAttribute('style', 'color: black');
 
 			input2.setAttribute('type', 'text');
-			input2.setAttribute('id', 'func' + i);
+			input2.setAttribute('id', 'func' + i); //func1
+			input2.setAttribute('name', 'func' + i); //func1
 
 			input3.setAttribute('type', 'text');
-			input3.setAttribute('id', 'sede' + i);
+			input3.setAttribute('id', 'sede' + i); //sede1
+			input3.setAttribute('name', 'sede' + i); //sede1
 
 			input4.setAttribute('type', 'text');
-			input4.setAttribute('id', 'bezerras' + i);
+			input4.setAttribute('id', 'bezerras' + i); //bezerras1
+			input4.setAttribute('name', 'bezerras' + i); //bezerras1
 
 			input5.setAttribute('type', 'text');
-			input5.setAttribute('id', 'industria' + i);
+			input5.setAttribute('id', 'industria' + i); //industria1
+			input5.setAttribute('name', 'industria' + i); //industria1
 
 			input6.setAttribute('type', 'text');
-			input6.setAttribute('id', 'ufc' + i);
+			input6.setAttribute('id', 'ufc' + i); //ufc1
+			input6.setAttribute('name', 'ufc' + i); //ufc1
 
 			input7.setAttribute('type', 'text');
-			input7.setAttribute('id', 'ccs' + i);
+			input7.setAttribute('id', 'ccs' + i); //ccs1
+			input7.setAttribute('name', 'ccs' + i); //ccs1
 
 			input8.setAttribute('type', 'text');
-			input8.setAttribute('id', 'vcMastite' + i);
+			input8.setAttribute('id', 'vcMastite' + i); //vcMastite1
+			input8.setAttribute('name', 'vcMastite' + i); //vcMastite1
 
 			input9.setAttribute('type', 'text');
-			input9.setAttribute('id', 'numVacas' + i);
+			input9.setAttribute('id', 'numVacas' + i); //numVacas1
+			input9.setAttribute('name', 'numVacas' + i); //numVacas1
 
 			input10.setAttribute('type', 'text');
-			input10.setAttribute('id', 'total' + i);
-
+			input10.setAttribute('id', 'total' + i); //total1
+			input10.setAttribute('name', 'total' + i); //total1
 			
-
 			td1.appendChild(input1);
 			td2.appendChild(input2);
 			td3.appendChild(input3);
