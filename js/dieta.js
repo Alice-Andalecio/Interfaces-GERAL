@@ -124,38 +124,47 @@ function AdicionarLote(){
 	div12Checkbox.classList.add('s4');
 
 	input1Checkbox.setAttribute('type', 'checkbox');
+	input1Checkbox.setAttribute('name', 'checkSilagem' + numLote); //checkSilagem1
 	input1Checkbox.setAttribute('id', 'checkSilagem' + numLote);
 	label1Checkbox.setAttribute('for', 'checkSilagem' + numLote);
 
-	input2Checkbox.setAttribute('type', 'checkbox');
+	input2Checkbox.setAttribute('type', 'checkbox');	
+	input2Checkbox.setAttribute('name', 'checkRacao' + numLote);
 	input2Checkbox.setAttribute('id', 'checkRacao' + numLote);
 	label2Checkbox.setAttribute('for', 'checkRacao' + numLote);
 
 	input3Checkbox.setAttribute('type', 'checkbox');
+	input3Checkbox.setAttribute('name', 'checkAlgodao' + numLote);
 	input3Checkbox.setAttribute('id', 'checkAlgodao' + numLote);
 	label3Checkbox.setAttribute('for', 'checkAlgodao' + numLote);
 
 	input4Checkbox.setAttribute('type', 'checkbox');
+	input4Checkbox.setAttribute('name', 'checkSoja' + numLote);
 	input4Checkbox.setAttribute('id', 'checkSoja' + numLote);
 	label4Checkbox.setAttribute('for', 'checkSoja' + numLote);
 
 	input5Checkbox.setAttribute('type', 'checkbox');
+	input5Checkbox.setAttribute('name', 'checkPoupa' + numLote);
 	input5Checkbox.setAttribute('id', 'checkPoupa' + numLote);
 	label5Checkbox.setAttribute('for', 'checkPoupa' + numLote);
 
 	input6Checkbox.setAttribute('type', 'checkbox');
+	input6Checkbox.setAttribute('name', 'checkFuba' + numLote);
 	input6Checkbox.setAttribute('id', 'checkFuba' + numLote);
 	label6Checkbox.setAttribute('for', 'checkFuba' + numLote);
 
 	input7Checkbox.setAttribute('type', 'checkbox');
+	input7Checkbox.setAttribute('name', 'checkBicarbonato' + numLote);
 	input7Checkbox.setAttribute('id', 'checkBicarbonato' + numLote);
 	label7Checkbox.setAttribute('for', 'checkBicarbonato' + numLote);
 
 	input8Checkbox.setAttribute('type', 'checkbox');
+	input8Checkbox.setAttribute('name', 'checkNucleo' + numLote);
 	input8Checkbox.setAttribute('id', 'checkNucleo' + numLote);
 	label8Checkbox.setAttribute('for', 'checkNucleo' + numLote);
 
 	input9Checkbox.setAttribute('type', 'checkbox');
+	input9Checkbox.setAttribute('name', 'checkOutra' + numLote);
 	input9Checkbox.setAttribute('id', 'checkOutra' + numLote);
 	label9Checkbox.setAttribute('for', 'checkOutra' + numLote);
 
